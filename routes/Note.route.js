@@ -6,8 +6,7 @@ const noteRouter=express.Router()
 noteRouter.get("/",async(req,res)=>{
     const notes= await NoteModel.find()
     res.send(notes)
-
-   // res.send("wlcome")
+    //res.send("wlcome")
 })
 
 

@@ -11,7 +11,7 @@ app.use(express.json())
 
 app.use(cors())
 
-app.get("/home",(req,res)=>{
+app.get("/",(req,res)=>{
 
     res.send("Hone Page")
 })
@@ -22,8 +22,6 @@ app.use("/notes",noteRouter)
 
 
 app.listen(process.env.port, async(req,res)=>{
- 
-
     try{
 
         await connection
