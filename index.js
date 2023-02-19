@@ -13,7 +13,7 @@ app.use(cors())
 
 app.get("/",(req,res)=>{
 
-    res.send("Hone Page")
+    res.send("Home Page")
 })
 
 app.use("/users",userRouter)
